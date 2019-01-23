@@ -9,9 +9,9 @@ class Cliente extends REST_Controller {
 	public function index_get(){
 		$clientes = $this->cliente_model->get();
 		if (!is_null($clientes)) {
-			$this->response(array('response' => $clientes), 200);
+			$this->response(array('Respuesta' => $clientes), 200);
 		} else {
-			$this->response(array('error' => 'No existen rutas en la base de datos'), 200);
+			$this->response(array('Respuesta' => 'No se han ingresado clientes), 200);
 		}
 	}
 
