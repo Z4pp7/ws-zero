@@ -54,4 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
-$route['cliente']['get'] = 'cliente/clientes';
+$route['clientes']['get'] = 'cliente';
