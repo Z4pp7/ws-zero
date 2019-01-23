@@ -6,8 +6,8 @@ class Cliente extends REST_Controller {
 		parent::__construct();
 		$this->load->model('cliente_model');
 	}
-	public function clientes_get(){
-		$clientes = $this->cliente_model->get();
+	public function index_get(){
+		$clientes = $this->cliente_model->getClientes();
 		if (!is_null($clientes)) {
 			$this->response(array('Respuesta' => $clientes), 200);
 		} else {
