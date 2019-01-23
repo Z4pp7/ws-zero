@@ -11,7 +11,7 @@ class Cliente extends REST_Controller {
 		if (!is_null($clientes)) {
 			$this->response(array('Respuesta' => $clientes), 200);
 		} else {
-			$this->response(array('Respuesta' => 'No se han ingresado clientes), 200);
+			$this->response(array('Respuesta' => 'No se han ingresado clientes'), 200);
 		}
 	}
 
